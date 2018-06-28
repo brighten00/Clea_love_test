@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="text-align:center;"><h1>To show my love</h1></div>
+    <div class="container">
+        <div class="row justify-content-center">
+
+                <div class="col-md-12">
+                    <div style="text-align:center;"><h1 class="thin center">Have a look</h1></div>
+                </div>
+
+{#                  {{ post = list(posts) }}#}
+{#                {% for post in posts %}#}
+                    <div class="col-6">
+                       <div class="card text-center border-primary bg-light mb-3">
+                           <img class="card-img-top" src="{{ posts.image.url }}" alt="Card image cap">
+                           <div class="click1" >
+                               <h3 class="post-title"><a href="/post/{{ posts.slug}}">Check it out</a></h3>
+                           </div>
+
+                       </div>
+                    </div>
+{#                {% endfor %}#}
+
+
+        </div>
+    </div>
+
+{% endblock %}

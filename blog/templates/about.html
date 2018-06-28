@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{#    {% load bootstrap4 %}#}
+    {% load static %}
+{#    {% bootstrap_css %}#}
+{#    {% bootstrap_javascript %}#}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Be your home</title>
+</head>
+<style>
+    body{
+        background: url('{% static "images/about.jpg" %}') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+    }
+    .showtext{
+            position: relative;
+            left: 50%;
+
+            top: 50%;
+
+            width: 1000px;
+            height: 600px;
+            margin-left:-500px;
+
+            line-height: 50px;
+            text-align: center;
+            background:rgba(255,255,255,0.5);
+    }
+
+</style>
+<body>
+    <div id="content">
+        <div class="showtext" style="text-align:center;">
+        <P><h1><b>Then I will be your harbor, your home and your accommodation</b></h1></P>
+        </div>
+    </div>
+</body>
+</html>
